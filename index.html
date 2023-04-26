@@ -7,54 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jimmy Ng's CV">
     <meta name="author" content="Jimmy Ng">
+    <link rel="stylesheet" href="style.css">
     <title>Jimmy Ng - My CV</title>
 
 </head>
 
 <body>
     <header>
-        <h1> This is my CV - by Jimmy Ng </h1>
+        <h1> Jimmy Ng </h1>
+        <p id="quote"><q>It always seems impossible until it's done</q> <br><small>- Nelson Mandela -</small>
+        </p>
+        <nav class="menu">
+            <a href=#contact>Contact details</a>
+            <a href=#profile>My profile</a>
+            <a href=#exp>Work Experiences</a>
+            <a href=#skills>Skills</a>
+            <a href=#edu>Education</a>
+        </nav>
     </header>
-    <nav class="menu">
-        <!--<ul>
-            <li> <a href=#contact>Contact details</a></li>
-            <li> <a href=#profile>My profile</a> </li>
-            <li> <a href=#exp>Work Experiences</a> </li>
-            <li> <a href=#skills>Skills</a></li>
-            <li> <a href=#edu>Education</a> </li>
-        </ul>-->
-        <a href=#contact>Contact details</a>
-        <a href=#profile>My profile</a>
-        <a href=#exp>Work Experiences</a>
-        <a href=#skills>Skills</a>
-        <a href=#edu>Education</a>
-    </nav>
     <main>
         <article>
             <header>
                 <h2 id="contact"> Contact details </h2>
             </header>
             <p>
-            <ol>
+            <ol class="contact">
                 <li> Email:<a href="mailto:jimmy_ng@xyz.de"> jimmy_ng@xyz.de</a></li>
                 <li> Phone:<a href="tel:+4917612345678"> +49 176 1234 5678</a></li>
                 <li> Twitter: @jimmy</li>
             </ol>
             </p>
         </article>
+
         <article>
             <header>
                 <h2 id="profile">My profile</h2>
-                <p>
-                    A coffee expert on his hunt for new opportunities in the field of Web Development. <br>
-                    Eager and willing to learn what it takes to make the world more accessable through human and machine
-                    interaction.
-                    Currently a full time participant of coding-bootcamps.eu class of 04-2023 (Finish 07-2023)
-                </p>
             </header>
+            <p>
+                A coffee expert on his hunt for new opportunities in the field of Web Development. <br>
+                Eager and willing to learn what it takes to make the world more accessable through human and machine
+                interaction.<br>
+                Currently a full time participant of coding-bootcamps.eu class of 04-2023 (Finish 07-2023)
+            </p>
         </article>
+
         <article>
-            <h2 id="exp"> Experiences </h2>
+            <header>
+                <h2 id="exp"> Experiences </h2>
+            </header>
             <section>
                 <header>
                     <h3>Coffee Roaster</h3>
@@ -99,12 +99,15 @@
                 </p>
             </section>
         </article>
+
         <article>
             <header>
                 <h2 id="skills">Skills</h2>
             </header>
             <section>
-                <h3>Soft skills</h3>
+                <header>
+                    <h3>Soft skills</h3>
+                </header>
                 <ul>
                     <li>fluent in German and English</li>
                     <li>adapt to new situations fast</li>
@@ -112,7 +115,9 @@
                 </ul>
             </section>
             <section>
-                <h3>Technical skills</h3>
+                <header>
+                    <h3>Technical skills</h3>
+                </header>
                 <ul>
                     <li>html 5</li>
                     <li>css 3</li>
