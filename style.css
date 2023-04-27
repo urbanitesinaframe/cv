@@ -80,3 +80,20 @@ article {
 article + article {
   border-top: 2px solid black;
 }
+
+#profile::after {
+  content: " 💻⛳☕";
+}
+
+::selection {
+  background-color: slategray;
+  color: white;
+}
+
+#mail::before {
+  content: "📧";
+}
+
+#phone::before {
+  content: "📱";
+}
