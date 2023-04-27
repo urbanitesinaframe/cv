@@ -80,14 +80,18 @@ article + article {
   border-top: 2px solid black;
 }
 
-#profile::after {
-  content: " 💻⛳☕";
-}
-
 #mail::before {
   content: "📧";
 }
 
 #phone::before {
   content: "📱";
+}
+
+.experiences-header {
+  display: inline-block;
+}
+
+.experiences-subheader {
+  display: inline-block;
 }
