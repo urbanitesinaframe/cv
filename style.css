@@ -14,7 +14,7 @@ html {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 1em;
 }
 
 h1,
@@ -22,17 +22,30 @@ h2,
 h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+main {
+  padding: 1rem;
+  max-width: 80ch;
+  margin: 0 auto;
+}
 
 /*header {
   border: 1px solid black;
 }*/
 
-.article-header {
-  padding: 1rem 0;
-  position: relative;
-  left: 2rem;
-  _border: 1px solid black;
+p {
+  padding-left: 1rem;
+  max-width: 50rem;
 }
+
+article {
+  padding-bottom: 0.65rem;
+}
+
+article + article {
+  border-top: 0.25rem solid black;
+}
+
+/* ---Start Title Header--- */
 
 .site-header {
   text-align: center;
@@ -42,34 +55,31 @@ h3 {
   /*border-bottom: 20px;*/
 }
 
-p {
-  padding-left: 1rem;
-  max-width: 50rem;
+.heading-group {
+  font-size: 5rem;
 }
 
 #quote {
+  font-size: 0.25em;
   text-align: center;
   padding: auto;
   max-width: 100%;
 }
-
-main {
-  padding: 1rem;
-  max-width: 50rem;
-  margin: 0 auto;
+.article-header {
+  padding: 1rem 0;
+  position: relative;
+  left: 2rem;
+  _border: 1px solid black;
 }
 
-.menu {
-  padding-top: 0.25rem;
-}
-
-.menu a {
-  padding: 0 0.5rem;
-  text-underline-offset: 0.5rem;
+nav {
+  padding-top: 1rem;
 }
 
 nav a {
   color: rgb(83, 83, 83);
+  padding: 0 0.5rem;
+  text-underline-offset: 0.5rem;
 }
 
 nav a:hover {
@@ -81,13 +91,7 @@ nav a:active {
   color: black;
 }
 
-article {
-  padding-bottom: 0.65rem;
-}
-
-article + article {
-  border-top: 0.25rem solid black;
-}
+/* ---End Title header--- */
 
 #mail::before {
   content: "📧";
@@ -105,10 +109,12 @@ article + article {
   display: inline-block;
 }
 
+/* --- Start hire me button--- */
+
 #hire-me {
   position: absolute;
   top: 0.65rem;
-  left: 0.65rem;
+  right: 0.65rem;
 
   width: 10rem;
   height: 3rem;
@@ -122,3 +128,5 @@ article + article {
 #hire-me:hover {
   background-color: rgb(201, 183, 157);
 }
+
+/* ---End hire me button--- */
