@@ -111,11 +111,10 @@ nav a:active {
 
 /* --- Start hire me button--- */
 
-#hire-me {
+.hire-me {
   position: absolute;
   top: 0.65rem;
   right: 0.65rem;
-
   width: 10rem;
   height: 3rem;
   border: 0.25rem sold slategray;
@@ -125,8 +124,17 @@ nav a:active {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#hire-me:hover {
+.hire-me:hover {
   background-color: rgb(201, 183, 157);
+  cursor: pointer;
+}
+
+#hire-me-initial:active {
+  visibility: hidden;
+}
+
+#hire-me-follow {
+  background-color: greenyellow;
 }
 
 /* ---End hire me button--- */
