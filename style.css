@@ -24,7 +24,7 @@ h3 {
 }
 main {
   padding: 1rem;
-  max-width: 80ch;
+  max-width: 50ch;
   margin: 0 auto;
 }
 
@@ -43,6 +43,7 @@ article {
 
 article + article {
   border-top: 0.25rem solid black;
+  margin-top: 1rem;
 }
 
 /* ---Start Title Header--- */
@@ -73,13 +74,15 @@ article + article {
 }
 
 nav {
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 
 nav a {
   color: rgb(83, 83, 83);
-  padding: 0 0.5rem;
+  padding: 1rem 1rem;
   text-underline-offset: 0.5rem;
+  display: inline-block;
+  line-height: 2rem;
 }
 
 nav a:hover {
@@ -115,12 +118,12 @@ nav a:active {
   position: absolute;
   top: 0.65rem;
   right: 0.65rem;
-  width: 10rem;
+  width: 5rem;
   height: 3rem;
   border: 0.25rem sold slategray;
   background-color: rgb(223, 223, 220);
   border-radius: 10px;
-  font-size: larger;
+  font-size: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -138,3 +141,36 @@ nav a:active {
 }
 
 /* ---End hire me button--- */
+
+/*start media queries*/
+
+@media print {
+  aside {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  body {
+    font-size: 1.25rem;
+  }
+  article + article {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.5rem;
+  }
+  aside {
+    font-size: 0.75rem;
+    position: fixed;
+    top: 15px;
+    right: 10px;
+  }
+}
+/*end media queries*/
