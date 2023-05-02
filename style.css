@@ -74,12 +74,16 @@ article + article {
 }
 
 nav {
-  padding-top: 5rem;
+  _border: 2px solid black;
+  _padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 nav a {
   color: rgb(83, 83, 83);
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   text-underline-offset: 0.5rem;
   display: inline-block;
   line-height: 2rem;
@@ -104,12 +108,18 @@ nav a:active {
   content: "📱";
 }
 
+.experiences-header-group {
+  display: flex;
+  flex-direction: column;
+}
 .experiences-header {
   display: inline-block;
 }
 
 .experiences-subheader {
   display: inline-block;
+  padding: 0;
+  color: rgb(107, 106, 106);
 }
 
 /* --- Start hire me button--- */
@@ -159,6 +169,17 @@ nav a:active {
   }
   article + article {
     margin-top: 3rem;
+  }
+  nav {
+    flex-direction: row;
+  }
+  .experiences-header-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .experiences-subheader {
+    align-self: center;
   }
 }
 
