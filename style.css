@@ -28,9 +28,9 @@ main {
   margin: 0 auto;
 }
 
-/*header {
+_header {
   border: 1px solid black;
-}*/
+}
 
 p {
   padding-left: 1rem;
@@ -50,9 +50,11 @@ article + article {
 
 .site-header {
   text-align: center;
-  background-color: rgba(211, 211, 208, 0.377);
+  background-image: linear-gradient(rgb(184, 184, 184), white);
+  _background-color: rgba(211, 211, 208, 0.377);
   padding: 1.5rem 1.5rem 3rem 1.5rem;
   _border: 1px solid black;
+
   /*border-bottom: 20px;*/
 }
 
@@ -72,7 +74,7 @@ article + article {
   left: 2rem;
   _border: 1px solid black;
 }
-
+/* ---Start navigation bar---*/
 nav {
   _border: 2px solid black;
   _padding-top: 5rem;
@@ -97,8 +99,18 @@ nav a:active {
   background-color: greenyellow;
   color: black;
 }
+/* --- End Navigaton bar --- */
 
 /* ---End Title header--- */
+
+/* ---Start Footer ---*/
+footer {
+  display: flex;
+  background-image: linear-gradient(180deg, white, rgba(136, 150, 164, 0.555));
+  justify-content: center;
+}
+
+/* ---Ende Footer*/
 
 #mail::before {
   content: "📧";
@@ -159,6 +171,9 @@ nav a:active {
     display: none;
   }
   nav {
+    display: none;
+  }
+  footer {
     display: none;
   }
 }
