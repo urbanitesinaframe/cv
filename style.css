@@ -37,7 +37,7 @@ h3 {
 }
 main {
   padding: 1rem;
-  max-width: 50ch;
+  max-width: 58vw;
   margin: 0 auto;
 }
 
@@ -75,6 +75,9 @@ article + article {
   font-size: 5rem;
 }
 
+.content-wrapper {
+  margin-top: 6rem;
+}
 #quote {
   font-size: 0.25em;
   text-align: center;
@@ -84,7 +87,6 @@ article + article {
 .article-header {
   padding: 1rem 0;
   position: relative;
-  left: 2rem;
   _border: 1px solid black;
 }
 /* ---Start navigation bar---*/
@@ -169,7 +171,7 @@ footer {
   font-size: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: var(--text-color);
-  transition: transform, 1s;
+  transition: transform, 0.3s;
 }
 
 .site-header:hover .hire-me {
@@ -215,6 +217,11 @@ footer {
   .experiences-subheader {
     align-self: center;
   }
+  .article-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    grid-column-gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -252,6 +259,9 @@ footer {
   nav a:hover {
     _background-color: rgb(177, 177, 177);
     color: rgb(55, 55, 55);
+  }
+  article + article {
+    border-top: 0.1rem solid rgb(188, 188, 188);
   }
 }
 /*end media queries*/
