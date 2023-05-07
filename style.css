@@ -3,13 +3,16 @@
   /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
 }
 
-html {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+:root {
   --text-color: rgb(55, 55, 55);
   --color-theme: white;
   --header-color: linear-gradient(rgb(184, 184, 184), white);
   --footer-color: linear-gradient(180deg, white, rgb(184, 184, 184));
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -99,14 +102,21 @@ nav a {
   text-underline-offset: 0.5rem;
   display: inline-block;
   line-height: 2rem;
+  transition: background-color, 0.4s;
+  border-radius: 10px;
 }
 
 nav a:hover {
-  background-color: rgb(230, 230, 230);
+  background-color: hsl(0, 0%, 80%);
 }
 
 nav a:active {
   background-color: greenyellow;
+  color: black;
+}
+
+nav a:focus {
+  background-color: #cccc0e;
   color: black;
 }
 /* --- End Navigaton bar --- */
@@ -159,19 +169,16 @@ footer {
   font-size: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: var(--text-color);
+  transition: transform, 1s;
 }
 
-.hire-me:hover {
-  background-color: rgb(201, 183, 157);
+.site-header:hover .hire-me {
   cursor: pointer;
+  transform: scale(1.5);
 }
 
-#hire-me-initial:active {
-  visibility: hidden;
-}
-
-#hire-me-follow {
-  background-color: greenyellow;
+.site-header:focus-within .hire-me {
+  transform: scale(1.5);
 }
 
 /* ---End hire me button--- */
@@ -223,7 +230,7 @@ footer {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  html {
+  :root {
     --text-color: rgb(206, 206, 206);
     --color-theme: black;
     --header-color: linear-gradient(rgb(71, 71, 71), black);
@@ -241,12 +248,7 @@ footer {
   .hire-me {
     background-color: rgb(134, 131, 131);
   }
-  .hire-me:hover {
-    background-color: #c9b79d;
-  }
-  #hire-me-follow {
-    background-color: #5200d0;
-  }
+
   nav a:hover {
     _background-color: rgb(177, 177, 177);
     color: rgb(55, 55, 55);
